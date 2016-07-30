@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab26</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<section id="container">
+        <header>
+            <h1>Mi sitio de Películas</h1>
+            <p>Este es nuestro sitio de peliculas con Microformatos</p>
+            <figure id="clap"> 
+            	<img src="images/pelis.jpg" width="420" height="250" 
+            <figure/>
+        </header>
+        <nav>    
+        	<ul>      
+        		<div id="caja1"><h1>bottom left</h1></div>
+				<div id="caja2"><h1>right top</h1></div>
+				<div id="caja3"><h1>50% 50%</h1></div>     
+            </ul>  
+        </nav>
+        <section id="content">
+            <article id="text1">
+                <div itemscope itemtype="http://schema.org/Movie">
+                    <h2 itemprop="name">Inception 1</h2>
+                    <div itemprop="director" itemscope="http://schema.org/Person">
+                        Director: <span itemprop="director">Christopher Nolan</span>
+                    </div>
+                    <span itemprop="genre">Ciencia Ficción</span>
+                    <a href="#" itemprop="trailer">Trailer De la Película</a>
+                    <figure id="img_txt1"> 
+            	<img src="images/pelis.jpg" width="210" height="125" 
+            <figure/>
+                </div>
+            </article>
+            <article id="text2">
+              <h2>Titulo Texto 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem culpa dolorem dolores dolorum laboriosam minima modi mollitia nam non obcaecati perspiciatis quo ratione rerum, sapiente tenetur velit veritatis vero?</p>
+            </article>
+          <article id="text3">
+                <div itemscope itemtype="http://schema.org/Movie">
+                    <h2 itemprop="name">Inception 3</h2>
+                    <div itemprop="director" itemscope="http://schema.org/Person">
+                        Director: <span itemprop="director">Christopher Nolan</span>
+                    </div>
+                    <span itemprop="genre">Ciencia Ficción</span>
+                    <a href="#" itemprop="trailer">Trailer De la Película</a>
+                </div>
+            </article>
+            <article id="text4">
+                <div itemscope itemtype="http://schema.org/Movie">
+                    <h2 itemprop="name">Inception 4</h2>
+                    <div itemprop="director" itemscope="http://schema.org/Person">
+                        Director: <span itemprop="director">Christopher Nolan</span>
+                    </div>
+                    <span itemprop="genre">Ciencia Ficción</span>
+                    <a href="#" itemprop="trailer">Trailer De la Película</a>
+                </div>
+            </article>
+            <article id="text5">
+                <div itemscope itemtype="http://schema.org/Movie">
+                    <h2 itemprop="name">Inception 5</h2>
+                    <div itemprop="director" itemscope="http://schema.org/Person">
+                        Director: <span itemprop="director">Christopher Nolan</span>
+                    </div>
+                    <span itemprop="genre">Ciencia Ficción</span>
+                    <a href="#" itemprop="trailer">Trailer De la Película</a>
+                </div>
+            </article>
+        </section>
+        <footer>
+            Creado en 2016 &copy;
+        </footer>
+    </section>
+</body>
+</html>

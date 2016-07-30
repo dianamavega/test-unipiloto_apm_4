@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+ 
+body{
+    color: #333;
+    font-family: "Fjalla One", Arial, "Monaco", sans-serif;
+    font-size: 16px;
+}
+ 
+#container{
+    margin: 0 auto;
+    max-width: 960px;
+}
+ 
+#container header{
+    background: #DDD;
+    border-bottom: 1px solid; 
+}
+ 
+#container header h1{
+    font-size: 4em;
+    margin: 1em;
+}
+ 
+#container header p{
+    font-size: 2em;
+    margin: 1em;
+}
+ 
+#container #content{
+    background: #CCC;
+    padding: 10px; 
+}
+ 
+#container #content article{
+    background: #FFF;
+    border-bottom: 2px solid #CCC;
+}
+ 
+#container footer{
+    background: #CCC;
+}
+
+#destacada {
+  width: 120px;
+  height: 250px;
+}
+
+#text1 {
+    background-color: #B0E0E6;
+}
+
+#text2 {
+    background-color: #DDA0DD;
+}
+
+#text3 {
+    background-color: #FFC0CB;
+}
+
+#caja1 {
+  background-image: url("images/help.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+#caja2 {
+  background-image: url("images/help.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+#caja3 {
+  background-image: url("images/help.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
+
+ 
+ 
+@media screen and (max-width: 768px){
+    #container header{
+        background: #66CDAA;
+        border-bottom: 1px solid; 
+        padding: 8px;
+        text-align: center;
+    }
+ 
+    #container header h1{
+        font-size: 4em;
+        margin: 1px;
+        color: red;
+     }
+	h2 {
+        font-size: 2em;
+        margin: 1px;
+        color: red;
+     }
+	 p {
+        font-size: 1em;
+        margin: 1px;
+        color: green;
+     }
+ 
+#container header p{
+    color: blue;
+        font-size: 2em;
+        margin: 1em;
+    }
+		#clap {
+  display:none;
+}
+
+		#text3 {
+  display:none;
+}
+		#text5 {
+  display:none;
+}
+	#img_txt1 {
+  display:block;
+} 
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    #container header{
+        background: #FFDEAD;
+        border-bottom: 1px solid; 
+        padding: 8px;
+        text-align: center;
+		
+    }
+	#destacada {
+  width: 120px;
+  height: 250px;
+}
+	#clap {
+  display:none;
+}
+	#img_txt1 {
+  display:none;
+}
+		#text2 {
+  display:none;
+}
+		#text4 {
+  display:none;
+}
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    #container header{
+        background: #C71585;
+        border-bottom: 1px solid; 
+        padding: 8px;
+        text-align: center;
+    }
+	#clap {
+  display:block;
+}
+	#img_txt1 {
+  display:block;
+}
+} 

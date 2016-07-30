@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="names">
+<head>
+	<title>AngularJS First Application</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head>
+<body>
+	<div ng-controller="controller_one">
+		<h1>Objetos</h1>
+		<ul>
+			<li ng-repeat="name in simple_names">{{ name  }}</li>
+		</ul>
+
+	</div>
+    <div ng-controller="controller_one">
+		<h1>Numeros</h1>
+		<ul>
+			<li ng-repeat="name in heroes">{{ name  }}</li>
+		</ul>
+
+	</div>
+	
+	<script type="text/javascript">
+	angular.module('names', [])
+	       .controller('controller_one',function($scope){
+	       	$scope.simple_names = ["Mesa", "Casa", "Silla","Libro", "Cuadro", "Florero"];
+            $scope.heroes = [ "1", "3", "5","7", "9", "11" 
+            ];
+	       });
+			.controller('controller_two'),function($scope){
+			$scope.prototype	
+				}
+	</script>
+</body>
+</html>

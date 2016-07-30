@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AngularJS First Application</title>
+	<meta charset="utf-8" />
+</head>
+<body ng-app="app">
+	<div >
+    	<div ng-controller="controllerOne">
+		<h1>Suma</h1>
+		<p>Valor a: <input  type="number" ng-model="a" /></p>
+		<p>Valor b: <input  type="number" ng-model="b" /></p>
+        <p>Resultado: {{ a+b }}</p>
+        </div>
+        
+        <div ng-controller="controllerOne">
+		<h1>Resta</h1>
+		<p>Valor a: <input  type="number" ng-model="a" /></p>
+		<p>Valor b: <input  type="number" ng-model="b" /></p>
+        <p>Resultado: {{ a-b }}</p>
+        </div>
+       
+	</div>
+	<script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script>
+	angular.module('app', []) 
+	.controller('controllerOne',function ($scope){
+			$scope.a = 0;
+			$scope.b = 0;
+			
+		})
+	</script>
+    
+</body>
+</html>

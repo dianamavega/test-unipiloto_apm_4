@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AngularJS First Application</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div ng-app>
+		<h1>Sample Application</h1>
+		<p>Ingrese su nombre: <input  type="text" ng-model="firt_name" /></p>
+		<p>Ingrese su e-mail: <input  type="email" ng-model="last_name" /></p>
+		<p>Ingrese su telefono: <input  type="number" ng-model="phone" /></p>
+        <p> Tu nombre es <span ng-bind="firt_name"></span> !</p>
+        <p> Tu apellido es <span ng-bind="last_name"></span> !</p>
+        <p> Tu telefono es <span ng-bind="phone"></span> !</p>
+	</div>
+	<script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</body>
+</html>
