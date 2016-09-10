@@ -3,11 +3,15 @@
     <button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Productos</ion-title>
+    <ion-title>Product</ion-title>
   </ion-navbar>
 </ion-header>
-
-
+ 
 <ion-content padding>
-
+<ion-list inset>
+	<button block assertive (click)="getProduct()">Lista</button>
+  <ion-item *ngFor="let item of list">
+    {{item.name}}, {{item.type }}, {{item.price}}, {{item.quantity}}
+  </ion-item>
+</ion-list>
 </ion-content>

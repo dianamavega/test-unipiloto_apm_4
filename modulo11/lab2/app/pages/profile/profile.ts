@@ -11,9 +11,15 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'build/pages/profile/profile.html',
 })
 export class ProfilePage {
+	public list: any;
 
   constructor(private navCtrl: NavController) {
-
+  	this.list =[
+  	{
+  		Username: 'Diana M',
+  		password: '****'
+  	}
+  	]
   }
 
 }

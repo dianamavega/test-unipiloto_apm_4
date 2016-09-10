@@ -5,6 +5,7 @@ import { StatusBar } from 'ionic-native';
 import { Page1 } from './pages/page1/page1';
 import { Page2 } from './pages/page2/page2';
 import { ProductPage } from './pages/product/product';
+import { ProductServices } from './providers/product/product';
 import { ProfilePage } from './pages/profile/profile'; 
 
 

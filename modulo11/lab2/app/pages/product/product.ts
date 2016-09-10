@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { ProductServices } from '../../providers/product/product';
 
 /*
   Generated class for the ProductPage page.
@@ -9,11 +10,18 @@ import { NavController } from 'ionic-angular';
 */
 @Component({
   templateUrl: 'build/pages/product/product.html',
+  providers: [ProductServices]
 })
 export class ProductPage {
 
-  constructor(private navCtrl: NavController) {
+	public list: any;
 
-  }
+    constructor(private navCtrl: NavController, productServices: ProductServices){
+  	productServices.getProducts().subscribe(
+  		list => { this.list = list},
+  		err => {
+  			alert(err);
+  		})
+	}
 
 }
